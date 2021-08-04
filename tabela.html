@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <title>Ranking Robotica</title>
+    <script type="text/javascript">
+        function Atualizar() {
+            window.location.reload();
+        }
+
+    </script>
+
+
+    <style>
+
+        table {
+            width: 30%;
+            margin: auto;
+        }
+
+        td,
+        th {
+            border: 2px solid #000000;
+            text-align: center;
+            background-color: rgb(189, 189, 189);
+            padding: 10px;
+        }
+
+        h1   {
+            text-align: center;
+        }
+            
+        #tbody tr:nth-child(1) td {
+            background-color: rgb(32, 209, 32);
+        }
+
+        #tbody tr:nth-child(2) td {
+            background-color: yellow;
+        }
+
+        #tbody tr:nth-child(3) td {
+            background-color: orange;
+        }
+    </style>
+
+</head>
+
+
+<body onload="setInterval('Atualizar()',5000)"  oncontextmenu="return false" ondragstart="return false"
+
+                                   
+onselectstart="return false" >
+<ul class="w3-ul">
+<li class="w3-jumbo w3-teal"><h1 class="animate__animated animate__pulse animate__infinite	infinite"> <i class="fa fa-mortar-board" style="font-size:36px"></i>
+    Ranking <i class="fa fa-mortar-board" style="font-size:36px"></i>
+</h1></li><!--site de icone https://www.w3schools.com-->
+            </ul>    
+
+
+
+    <table>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+    <script src="firebase.js"></script>
+
+</body>
+
+</html>
